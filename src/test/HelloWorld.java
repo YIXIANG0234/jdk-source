@@ -13,5 +13,9 @@ public class HelloWorld {
         for (String line : list) {
             System.out.println(line);
         }
+        Runtime runtime = Runtime.getRuntime();
+        System.out.println("maxMemory：" + runtime.maxMemory());
+        System.out.println("totalMemory：" + runtime.totalMemory());
+        System.out.println("freeMemory：" + runtime.freeMemory());
     }
 }
